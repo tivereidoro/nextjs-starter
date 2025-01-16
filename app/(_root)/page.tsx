@@ -3,16 +3,18 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-poppins grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-15">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/logo.svg"
-          alt="Next.js logo"
-          width={90}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+      <main className="flex flex-col gap-8 row-start-2 items-center  sm:items-start">
+        <div className="w-full flex items-center justify-center">
+          <Image
+            className="dark:invert flex"
+            src="/logo.svg"
+            alt="Next.js logo"
+            width={90}
+            height={38}
+            priority
+          />
+        </div>
+        <ol className="list-inside list-decimal p-1 text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -38,7 +40,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Read docs
           </a>
         </div>
       </main>
